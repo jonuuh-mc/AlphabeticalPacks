@@ -13,12 +13,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.List;
 
 @Mixin(GuiScreenResourcePacks.class)
-public class MixinGuiScreenResourcePacks extends GuiScreen
+public abstract class MixinGuiScreenResourcePacks extends GuiScreen
 {
     @Shadow
     private List<ResourcePackListEntry> availableResourcePacks;
 
-    @Inject(method = "initGui", at = @At(value = "INVOKE", target = "Ljava/util/List;add(Ljava/lang/Object;)Z", ordinal = 4))
+    @Inject(method = "initGui", at = @At(value = "FIELD", target = "Lnet/minecraft/client/gui/GuiScreenResourcePacks;availableResourcePacksList:Lnet/minecraft/client/gui/GuiResourcePackAvailable;", ordinal = 0))
     private void AlphabeticalPacks$sortAvailablePacks(CallbackInfo ci)
     {
         availableResourcePacks.sort(new PackComparator());
