@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "alphabeticalpacks",
+        "name": "AlphabeticalPacks",
+        "description": "A small hotfix mod that uses mixins to attempt a better job of ordering available resource packs. Expect lots of possible edge cases, I made this in 20 minutes.\n\nPacks are sorted alphabetically by default, but most pack makers add a prefix '!' to pack names followed by some number of spaces to make their pack higher in this order. This mod more or less just tries to remove that prefixing before resorting alphabetically.",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["jonuuh"],
+        "credits": "",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]

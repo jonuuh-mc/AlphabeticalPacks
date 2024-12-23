@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.7",
+  "package": "io.jonuuh.alphabeticalpacks.mixins",
+  "refmap": "mixins.alphabeticalpacks.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MixinGuiScreenResourcePacks"
+  ]
+}
